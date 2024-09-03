@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio /title>
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">    
+                
+                    <div class="logo-text">Tailan Santos</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resumo</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="img/XTKA9209.JPG" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Olá, eu sou <span class="input">Frontend Desenvolvidor</span></h5>
+                    <h1>Tailan Santos</h1>
+                    <p> Olá, sou Tailan Santos desenvolvedor web com 1 ano de experiência em HTML, CSS e JavaScript, além de frameworks 
+                        como React. Tenho um histórico de criar sites e aplicações eficazes. Estou empolgado com a oportunidade na
+                         Future React e acredito que minhas habilidades podem agregar muito valor à sua equipe.
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Baixar CV</a>
+                       <a href="#" class="btn">Contato</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+       
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Desenvolvedor web","UX Designer","Desenvolvedor web"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
